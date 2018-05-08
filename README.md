@@ -1,10 +1,9 @@
-## Welcome to GitHub Pages
+## My Project in Text Summarization
 
-You can use the [editor on GitHub](https://github.com/mzhao98/shiny-barnacle/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Motivation for this project: As a student in college, I'm often faced with a seemingly endless number of scientific papers and research articles that I would love to read but can never find time to. Autonomatic text summarization seemed like a solution.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Code for Reduction
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -23,15 +22,16 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](https://github.com/adamfabish/Reduction)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Conclusions
+Text
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mzhao98/shiny-barnacle/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+### Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Michelle Zhao
+mzhao@caltech.edu
