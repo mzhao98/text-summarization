@@ -23,7 +23,7 @@ I used the NSF Research Award Abstracts 1990-2003 Data Set from the UCI machine 
 
 For extractive summarization, I used the TextRank algorithm, which is based on Google’s PageRank algorithm. TextRanks works by transforming the text into a graph. It regards words as vertices and the relation between words in phrases or sentences as edges. Each edge also has different weight. When one vertex links to another one, it is basically casting a vote of importance for that vertex. The importance of the vertex also dictates how heavily weighted its votes are. TextRank uses the structure of the text and the known parts of speech for words to assign a score to words that are keywords for the text.
 
-[[https://github.com/mzhao98/shiny-barnacle/blob/master/img/algo1.png]]
+[[https://github.com/mzhao98/shiny-barnacle/blob/master/algo1.png]]
 
 
 ### Code for Reduction
