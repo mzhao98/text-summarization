@@ -26,6 +26,8 @@ For extractive summarization, I used the TextRank algorithm, which is based on G
 
 ![alt text](https://raw.githubusercontent.com/mzhao98/markdown-here/shiny-barnacle/blob/master/algo1.png)
 
+<img src="https://raw.githubusercontent.com/mzhao98/markdown-here/shiny-barnacle/blob/master/algo1.png" alt="hi" class="inline"/>
+
 First, we take the input text and split the entire text down to individual words. Using a list of stop words, words are filtered so that only nouns and adjectives are considered. Then a graph of words is created where the words are the nodes/vertices. Each vertex’s edges are defined by connections of a word to other words that are close to it in the text. The TextRank algorithm is then run on the graph. Each node is given a weight of 1. Then, we go through the list of nodes and collect the number of edges and connections the word has, which is essentially the influence of the connected vertex. The scores are computed and normalized for every node, and the algorithm takes the top-scoring words that have been identified as important keywords. The algorithm sums up the scores for each of the keywords in all of the sentences, and ranks the sentences in order of score and significance. Finally, the top K sentences are returned to become the TextRank generated summary.
 
 ### Code for TextRank Reduction
