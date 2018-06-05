@@ -71,7 +71,11 @@ def reduce(self, text, reductionRatio):
 ### Abstractive Methods
 First, we need to preprocess the data by constructing an embedding of the text. Embedding the input converts the text into numbers, a more interpretable numerical representation of the data for the encoder-decoder network to work with. I experimented with two different embedding methods: Word2Vec and Global-Vectors (GloVe). Word2Vec is algorithm that combines continuous bag of words and the Skip-gram model to generate word vector representations. GloVe is an unsupervised learning algorithm for obtaining vector representations for words, training from a dictionary of common words. 
 
+![alt text](https://github.com/mzhao98/text-summarization/blob/master/p1.png)
+
 The encoder-decoder model is composed of multiple recurrent neural networks, one of which works as an encoder, and one as a decoder. The encoder converts an input document into a latent representation (a vector), and the decoder reads the latent input, generating a summary as it decodes. With encoder decoder structures, issues to consider include determining how to set the focus on the import sentences and keywords, how to handle novel or rare words in the document, how to handle incredibly long documents, and how to make summaries readable and flexible with a large vocabulary.
+
+![alt text](https://github.com/mzhao98/text-summarization/blob/master/p2.png)
 
 The encoder-decoder recurrent neural network architecture has been shown to be effective when applied to text summarization. The architecture involves two components: an encoder and a decoder. The encoder reads the entire input sequence and encodes it into an internal representation, often a fixed-length vector. The decoder reads the encoded input sequence from the decoder and generates the output sequence, which is the summary. Both the encoder and decoder sub-models are trained jointly, meaning their output feed into the other as input. 
 
@@ -97,10 +101,23 @@ I used the one-shot encoder-decoder model, where the entire output sequence is g
 Abstractive methods like the encoder-decoder network are capable of generating entirely new phrases and sentences to capture the meaning of the text. They tend to be more complex than extractive methods, since they learn to construct some cohesive phrasing of the relevant concepts. However, this also means they are more susceptible to error.
 
 ## Results
+### Extractive Results
 The TextRank algorithm generated the following summary. I specified how many sentences to reduce, and generated a 70% reduction summary and a 90% reduction summary which contained the top 3 most important sentences and the top 1 most important sentence, respectively.
 
+![alt text](https://github.com/mzhao98/text-summarization/blob/master/p3.png)
+
+### Abstractive Results
+As part of the pre-processing analysis, ranking the words in order of number of appearances, we saw this distribution of keywords and their frequencies in the training data.
+![alt text](https://github.com/mzhao98/text-summarization/blob/master/p5.png)
+
+We saw that the distribution of set of text input words is much larger and wider than that of words in the summaries.
+
+![alt text](https://github.com/mzhao98/text-summarization/blob/master/p6.png)
+![alt text](https://github.com/mzhao98/text-summarization/blob/master/p7.png)
 
 
+The encoder decoder network generated the following two summaries on the testing input.
+![alt text](https://github.com/mzhao98/text-summarization/blob/master/p4.png)
 
 ### Discussion
 TextRank selected the two most significant sentences in the text. E-D generated two different three-word summaries, using words not present in the text, but the summaries generated were not representative of the text and did not make logical sense.
