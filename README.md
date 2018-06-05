@@ -24,8 +24,7 @@ I used the NSF Research Award Abstracts 1990-2003 Data Set from the UCI machine 
 ### Extractive Methods
 For extractive summarization, I used the TextRank algorithm, which is based on Google’s PageRank algorithm. TextRanks works by transforming the text into a graph. It regards words as vertices and the relation between words in phrases or sentences as edges. Each edge also has different weight. When one vertex links to another one, it is basically casting a vote of importance for that vertex. The importance of the vertex also dictates how heavily weighted its votes are. TextRank uses the structure of the text and the known parts of speech for words to assign a score to words that are keywords for the text.
 
-![alt text](https://github.com/mzhao98/text-summarization/blob/master/algo1.png)
-
+![alt text](https://raw.githubusercontent.com/mzhao98/text-summarization/blob/master/algo1.png)
 
 First, we take the input text and split the entire text down to individual words. Using a list of stop words, words are filtered so that only nouns and adjectives are considered. Then a graph of words is created where the words are the nodes/vertices. Each vertex’s edges are defined by connections of a word to other words that are close to it in the text. The TextRank algorithm is then run on the graph. Each node is given a weight of 1. Then, we go through the list of nodes and collect the number of edges and connections the word has, which is essentially the influence of the connected vertex. The scores are computed and normalized for every node, and the algorithm takes the top-scoring words that have been identified as important keywords. The algorithm sums up the scores for each of the keywords in all of the sentences, and ranks the sentences in order of score and significance. Finally, the top K sentences are returned to become the TextRank generated summary.
 
