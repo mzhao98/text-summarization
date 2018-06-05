@@ -1,4 +1,4 @@
-# My Project in Text Summarization
+# Extractive vs. Abstractive Text Summarization Methods: An Analysis
 
 Text summarization solves the problem of condensing information into a more compact form, while maintaining the important information in the text. The methods of automatic text summarization fall into two primary categories: extractive and abstractive. A common approach of extractive summarization involves selecting the most representative sentences that best cover the information expressed by the original text based on a ranking of sentences by relevance. A popular method of abstractive text summarization is using an encoder-decoder structure, which generates a latent factor representation of the data, and decodes it to generate a summary. The goal of the project was to analyze and compare the effectiveness of both methods when applied specifically to scientific texts.
 
@@ -108,6 +108,7 @@ The TextRank algorithm generated the following summary. I specified how many sen
 
 ### Abstractive Results
 As part of the pre-processing analysis, ranking the words in order of number of appearances, we saw this distribution of keywords and their frequencies in the training data.
+
 ![alt text](https://github.com/mzhao98/text-summarization/blob/master/p5.png)
 
 We saw that the distribution of set of text input words is much larger and wider than that of words in the summaries.
