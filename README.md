@@ -120,10 +120,7 @@ I summarized this text from one of the scientific paper abstracts.
 #### Text: 
 Commercial exploitation over the past two hundred years drove the great Mysticete whales to near extinction. Variation in the sizes of populations prior to exploitation, minimal population size during exploitation and current population sizes permit analyses of the effects of differing levels of exploitation on species with different biogeographical distributions and life-history characteristics. Dr. Stephen Palumbi at the University of Hawaii will study the genetic population structure of three whale species in this context, the Humpback Whale, the Gray Whale and the Bowhead Whale. The effect of demographic history will be determined by comparing the genetic structure of the three species. Additional studies will be carried out on the Humpback Whale. The humpback has a world-wide distribution, but the Atlantic and Pacific populations of the northern hemisphere appear to be discrete populations, as is the population of the southern hemispheric oceans. Each of these oceanic populations may be further subdivided into smaller isolates, each with its own migratory pattern and somewhat distinct gene pool. This study will provide information on the level of genetic isolation among populations and the levels of gene flow and genealogical relationships among populations. This detailed genetic information will facilitate international policy decisions regarding the conservation and management of these magnificent mammals.
 
-![alt text](https://github.com/mzhao98/text-summarization/blob/master/p5.png)
 
-![alt text](https://github.com/mzhao98/text-summarization/blob/master/p6.png)
-![alt text](https://github.com/mzhao98/text-summarization/blob/master/p7.png)
 #### Summary:
 We can specific how many sentences to output and define what percentage of reduction of the text we will perform. 
 
@@ -135,6 +132,10 @@ Stephen Palumbi at the University of Hawaii will study the genetic population st
 
 ### Abstractive Results
 As part of the pre-processing analysis, ranking the words in order of number of appearances, we saw this distribution of keywords and their frequencies in the training data. The distribution of set of text input words is much larger and wider than that of words in the summaries.
+![alt text](https://github.com/mzhao98/text-summarization/blob/master/p5.png)
+
+![alt text](https://github.com/mzhao98/text-summarization/blob/master/p6.png)
+![alt text](https://github.com/mzhao98/text-summarization/blob/master/p7.png)
 
 ![alt text](https://github.com/mzhao98/text-summarization/blob/master/p4.png)
 
