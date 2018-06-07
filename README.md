@@ -132,6 +132,7 @@ Stephen Palumbi at the University of Hawaii will study the genetic population st
 
 ### Abstractive Results
 As part of the pre-processing analysis, ranking the words in order of number of appearances, we saw this distribution of keywords and their frequencies in the training data. The distribution of set of text input words is much larger and wider than that of words in the summaries.
+
 ![alt text](https://github.com/mzhao98/text-summarization/blob/master/p5.png)
 
 ![alt text](https://github.com/mzhao98/text-summarization/blob/master/p6.png)
